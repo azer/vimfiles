@@ -1,7 +1,6 @@
 " Vim color file -- candycode
 " Maintainer:   Justin Constantino <goflyapig-at-gmail-com>
 " Last Change:  2006 Aug 12
-
 set background=dark
 highlight clear
 let g:colors_name="candycode"
@@ -14,10 +13,10 @@ set cpo&vim
 " text {{{
 
 hi Normal       guifg=#ffffff       guibg=#050505       gui=NONE
-            \   ctermfg=white       ctermbg=black       cterm=NONE
+            \   ctermfg=white       ctermbg=NONE       cterm=NONE
 
 hi Folded       guifg=#c2bfa5       guibg=#050505       gui=underline
-            \   ctermfg=lightgray   ctermbg=black       cterm=underline
+            \   ctermfg=lightgray   ctermbg=NONE       cterm=underline
 
 hi LineNr       guifg=#928c75       guibg=NONE          gui=NONE
             \   ctermfg=darkgray    ctermbg=NONE        cterm=NONE
