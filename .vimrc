@@ -43,7 +43,7 @@ set t_vb=
 syntax enable "Enable syntax hl
 
 " Set font according to system
-set gfn=Monospace\ 10
+set gfn=Inconsolata\ 10
 set shell=/bin/bash
 
 colorscheme candycode_azer
@@ -79,7 +79,7 @@ set laststatus=2
 set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
 
 function! CurDir()
-    let curdir = substitute(getcwd(), '/Users/amir/', "~/", "g")
+    let curdir = substitute(getcwd(), '/home/azer/', "~/", "g")
     return curdir
 endfunction
 
