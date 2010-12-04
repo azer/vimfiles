@@ -1,112 +1,79 @@
-# Prototype
-snippet proto
-	${1:class_name}.prototype.${2:method_name} = function(${3:first_argument}) 
-	{
-		${4}
-	};
-# Function
+snippet ?
+	${1} ? ${2} : ${3}
+snippet |
+	${1} || ${2}
+snippet &
+	${1} && ${2} || ${3}
+snippet .
+	${1:this}.${2}
+snippet /
+	( ${1} )${2}
+snippet def
+	${1:name} = ${2}
+snippet var
+	var ${1:name} = ${2:value}${3:;}
+	${4}
 snippet fn
-	var ${1:function_name} = function(${2:argument})
-	{
-		${3:// body...}
-	}
-snippet fun
-	function ${1:function_name}(${2:argument})
-	{
-		${3:// body...}
-	}
-# Anonymous Function
-snippet f
-	function(${1}) {${2}};
-# if
-snippet if
-	if(${1:true}) 
-	{
+	function ${1}{
 		${2}
-	};
-# tertiary conditional
-snippet t
-	${1:/* condition */} ? ${2:a} : ${3:b}
-# switch
-snippet switch
-	switch(${1:expression})
-	{
-		case '${3:case}':
-			$ {4:// code}
-			break;
-		${5}
-		default:
-			${2:// code}
 	}
-# case
-snippet case
-	case '${1:case}':
-		$ {2:// code}
-		break;
-	${3}
-# for (...) {...}
+snippet ret
+	return ${1};
+snippet if
+	if(${1}){
+		${2}
+	}
 snippet for
-	for(var ${2:i} = -1, ${3:len}=${1:Things}.length; ++$2 < $3; ) 
-	{
+	for(var ${2:i} = -1, ${3:len}=${1:Things}.length; ++$2 < $3; ){
 		var ${4} = ${5:$1[$2]};
 		${6}
 	};
-# while (...) {...}
 snippet wh
-	while(${1:/* condition */}) 
-	{
-		${2:/* code */}
+	while(${1}) {
+		${2}
 	}
-# do...while
 snippet do
 	do {
-		${2:/* code */}
-	} while (${1:/* condition */});
-# Object Method
-snippet :f
-	${1:method_name}: function(${2:attribute})
-	{
-		${4}
-	}${3:,}
-# setTimeout function
-snippet timeout
-	setTimeout(function() {${3}}${2}, ${1:10};
-# Get Elements
-snippet gett
-	getElementsBy${1:TagName}('${2}')${3}
-# Get Element
-snippet get
-	getElementBy${1:Id}('${2}')${3}
-
-# Property
-snippet prop
-	var ${1:PropertyName} = ${2:null};
-	this.__defineGetter__('$1',function()
-	{
-		return $1;
-	});
-	this.__defineSetter__('$1',function(${3:value})
-	{
-		$1 = $3;
-		${4};
-	});
-
-##
-## ROKE SNIPPETS
-##
-snippet mod
-	(function( exports ){
 		${2}
-	})( ${1} = {} );
-
+	} while  (${1});
+	${3}
+snippet err
+	throw new Error('${1}');
+	${2}
 snippet exp
-	var ${1:Foo} = exports.$1 = function(${2})
-	{
+	var ${1:name} = exports.$1 = function $1(${2}){
 		${3}
 	}
+snippet extend
+	extend(${1:Class}, ${2:Super});
+	${3}
+snippet super
+	${1:Class}.prototype.${2:constructor}.${3:call}(this${4});
+	${5}
+snippet req
+	require('${1:./}${2:module}')${3}${4:;}
+	${5} 
+snippet proto
+	${1:Class}.prototype.${2:member} = ${3}
+snippet method
+	${1:Class}.prototype.${2:method} = function(${3:arguments}){
+		${4}
+	};
+	${5}
+snippet prop
+	${1:Class}.prototype.get${2:Name} = function(){
+		return this._${3:name}_ == null && this.set$2(${4:[]}) || this._$3_;
+	}
 
-snippet int
-	var I${1:InterfaceName} = exports.I$1 = new Interface({
-		'_interfaceName_':'$1',
-		'${2:Member}':${3:Type},
-	});
+	$1.prototype.set$2 = function(${5:value}){
+		this._$3_ = $5;
+		return $5;
+	}
+	${6}
+snippet get
+	${1:this}.get${2:Name}(${3});
+snippet set
+	${1:this}.set${2:Name}(${3:null});
+	$4
+snippet	$
+	${1:document}.getElementById('${2:id}')${3}
