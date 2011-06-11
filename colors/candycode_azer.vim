@@ -64,7 +64,7 @@ hi PmenuThumb   guifg=NONE          guibg=#cccccc       gui=NONE
             \   ctermfg=gray        ctermbg=gray        cterm=NONE
 
 hi StatusLine   guifg=#ffff00       guibg=#ff0000       gui=bold    
-            \   ctermfg=yellow      ctermbg=darkred     cterm=bold
+            \   ctermfg=white      ctermbg=green     cterm=bold
 hi StatusLineNC guifg=#444444       guibg=#c2bfa5       gui=NONE    
             \   ctermfg=darkgray    ctermbg=white       cterm=NONE
 hi WildMenu     guifg=#ffffff       guibg=#133293       gui=bold
