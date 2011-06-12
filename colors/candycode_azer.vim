@@ -64,13 +64,13 @@ hi PmenuThumb   guifg=NONE          guibg=#cccccc       gui=NONE
             \   ctermfg=gray        ctermbg=gray        cterm=NONE
 
 hi StatusLine   guifg=#ffff00       guibg=#ff0000       gui=bold    
-            \   ctermfg=white      ctermbg=green     cterm=bold
+            \   ctermfg=white      ctermbg=NONE         cterm=bold
 hi StatusLineNC guifg=#444444       guibg=#c2bfa5       gui=NONE    
-            \   ctermfg=darkgray    ctermbg=white       cterm=NONE
+            \   ctermfg=darkgray    ctermbg=NONE       cterm=NONE
 hi WildMenu     guifg=#ffffff       guibg=#133293       gui=bold
             \   ctermfg=white       ctermbg=darkblue    cterm=bold
 hi VertSplit    guifg=#c2bfa5       guibg=#c2bfa5       gui=NONE
-            \   ctermfg=white       ctermbg=white       cterm=NONE
+            \   ctermfg=white       ctermbg=NONE       cterm=NONE
 
 hi TabLine      guifg=#000000       guibg=#c2bfa5       gui=NONE
             \   ctermfg=black       ctermbg=white       cterm=NONE
