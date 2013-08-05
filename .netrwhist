@@ -1,0 +1,4 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/azer/emacs.js/libs/js2-mode-compiled'
+let g:netrw_dirhist_2='/Users/azer/rdio/rdio/web/client/Components/Marketing/FacebookContinueButton'
